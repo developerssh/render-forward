@@ -15,11 +15,11 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMedi
 @Client.on_message(filters.private & filters.command(['start']))
 async def start(client, message):
     buttons = [[
-        InlineKeyboardButton('📜 Support Group', url='https://t.me/BETA_BOTSUPPORT'),
-        InlineKeyboardButton('Update Channel 📣', url='https://t.me/BETA_UPDATES')
+        InlineKeyboardButton('📜 Support ', url='https://t.me/riot8'),
+        InlineKeyboardButton('Update 📣', url='https://t.me/divudadas')
         ],[
-        InlineKeyboardButton('💡 SouceCode', url='https://github.com/Jeolpaul/Auto-Forward-Bot'),
-        InlineKeyboardButton('DEVELOPER👨🏻‍💻', url ='https://t.me/JP_Jeol')
+        InlineKeyboardButton('💡 OWNER', url ='https://t.me/riot8')
+        InlineKeyboardButton('DEVELOPER👨🏻‍💻', url ='https://t.me/riot8')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await client.send_message(
@@ -34,7 +34,7 @@ async def start(client, message):
 @Client.on_message(filters.private & filters.command(['help']))
 async def help(client, message):
     buttons = [[
-        InlineKeyboardButton('SouceCode 💡', url='https://github.com/Jeolpaul/Auto-Forward-Bot'),
+        InlineKeyboardButton('SouceCode 💡', url='https://github.com/developerssh/render-forward'),
         InlineKeyboardButton('close 🔐', callback_data='close_btn')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -49,7 +49,7 @@ async def help(client, message):
 @Client.on_message(filters.private & filters.command(['about']))
 async def about(client, message):
     buttons = [[
-        InlineKeyboardButton('💡 SouceCode', url='https://github.com/Jeolpaul/Auto-Forward-Bot'),
+        InlineKeyboardButton('💡 SouceCode', url='https://github.com/developerssh/render-forward'),
         InlineKeyboardButton('close 🔐', callback_data='close_btn')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
