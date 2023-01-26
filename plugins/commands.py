@@ -19,7 +19,7 @@ async def start(client, message):
         InlineKeyboardButton('Update 📣', url='https://t.me/divudadas')
         ],[
         InlineKeyboardButton('💡 OWNER', url ='https://t.me/riot8')
-        InlineKeyboardButton('DEVELOPER👨🏻‍💻', url ='https://t.me/riot8')
+
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await client.send_message(
